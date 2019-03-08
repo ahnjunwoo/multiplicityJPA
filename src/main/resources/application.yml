@@ -1,0 +1,12 @@
+spring:
+  h2:
+    console:
+      enabled: true
+      path: /h2console
+  jpa:
+    hibernate:
+      ddl-auto: update
+    generate-ddl: true
+    show-sql: true
+    database: h2
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
