@@ -8,5 +8,11 @@ spring:
       ddl-auto: update
     generate-ddl: true
     show-sql: true
-    database: h2
+    database: mysql
     database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+  datasource:
+    #url: jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
+    url : jdbc:mysql://localhost/ex?useUnicode=true&characterEncoding=UTF-8&useSSL=false
+    username: root
+    password:
+    driver-class-name: com.mysql.jdbc.Driver
