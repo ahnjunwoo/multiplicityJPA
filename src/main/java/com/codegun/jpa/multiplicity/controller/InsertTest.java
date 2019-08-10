@@ -22,7 +22,7 @@ public class InsertTest {
 
     private ZonedDateTime createdAt = ZonedDateTime.now();
 
-    @PostConstruct
+    //@PostConstruct
     private void test(){
         ContentId newContentId = ContentId.fromString("newContentId");
         Map<Language, ContentDesc> textContents = new HashMap<>();
